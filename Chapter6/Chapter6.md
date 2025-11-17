@@ -16,6 +16,9 @@ In: import warnings
     # 定义for循环完成加法操作
     def for_loop_add(x, y):
         result = []
+		#作用：使用 zip 函数同时遍历 x 和 y 中的元素
+		#zip(x, y)：将两个可迭代对象的元素一一配对
+		#示例：如果 x = [1,2,3], y = [4,5,6]，则 zip(x,y) 产生 (1,4), (2,5), (3,6)
         for i, j in zip(x, y):
             result.append(i + j)
         return t.tensor(result)
